@@ -136,3 +136,30 @@ BEGIN
 	ORDER BY Emp.Id DESC
 END
 GO
+/************************************************************
+Description:  To Calculate Average Perfromance Score - Department wise
+*****************************************************************/
+DROP PROCEDURE IF EXISTS [dbo].[GetAveragePerfromanceScoreByDepartmentId]
+GO
+CREATE OR ALTER PROCEDURE [dbo].[GetAveragePerfromanceScoreByDepartmentId]
+    @departmentId INT
+AS
+BEGIN
+    SET NOCOUNT ON;
+    SELECT 
+        D.DepartmentName, 
+        CAST(AVG(PR.ReviewScore) AS FLOAT) AS AveragePerformanceScore
+    FROM 
+        Departments D
+    INNER JOIN 
+        Employees E ON D.Id = E.DepartmentId
+    INNER JOIN 
+        PerformanceReviews PR ON E.Id = PR.EmployeeId
+    WHERE 
+        PR.ReviewScore IS NOT NULL
+        AND D.Id = @departmentId  
+    GROUP BY 
+        D.DepartmentName
+    OPTION (RECOMPILE);
+END;
+GO
