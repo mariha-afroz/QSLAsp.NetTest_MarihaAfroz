@@ -1,0 +1,15 @@
+﻿@page
+@model EmployeeManagementSystem.Pages.Employees.AddEmployeeModel
+
+
+@{ViewData["Title"] = "Add Employee";}
+
+
+<div class="display-5 mb-1">New Employee</div>
+
+<div class="card dataForm">
+    <form method="post">
+        <partial name="_EmployeePartial" model="Model.EmployeeData" />
+        <partial name="_SaveCancelPartial" for="CCInfo" />
+    </form>
+</div>

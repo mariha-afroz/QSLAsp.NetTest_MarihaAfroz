@@ -1,0 +1,42 @@
+﻿@page
+@model EmployeeManagementSystem.Pages.Departments.DepartmentListModel
+
+@{
+    ViewData["Title"] = "Department List";
+}
+
+<div class="display-5 mb-1">New Department</div>
+
+@if (TempData["Message"] != null)
+{
+    <partial name="_MessagePartial" model='new MessageModel { Message = TempData["Message"] }' />
+}
+
+<div class="card mt-2">
+    <div class="card-header">
+        <strong> Departments <a asp-page="@Navigator.AddDepartment" class="btn btn-xs btn-greenOne"> Add New </a></strong>
+    </div>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Department Name</th>
+                <th>Manager</th>
+                <th>Budget</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                foreach (var department in Model.DepartementList)
+                {
+                    <tr>
+                        <td width="300">@department.DepartmentName</td>
+                        <td width="200">@department.Manager</td>
+                        <td width="300">@department.Budget</td>
+                        <td class="text-right"><a class="btn btn-xs btn-greenTwo" asp-page="@Navigator.EditDepartment" asp-route-id="@department.Id">Edit</a></td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

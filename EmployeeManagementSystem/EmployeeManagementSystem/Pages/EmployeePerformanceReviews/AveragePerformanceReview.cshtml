@@ -1,0 +1,52 @@
+﻿@page
+@model EmployeeManagementSystem.Pages.EmployeePerformanceReviews.AveragePerformanceReviewModel
+@inject EMSDataAccess.IEmployee EmployeeMan
+
+@{
+    ViewData["Title"] = "Average Performance Score";
+}
+
+<div class="display-5 mb-1">Average Performance Score</div>
+
+@{
+    var Departments = EmployeeMan.GetAllDepartments();
+}
+
+<div class="card">
+    <div class="card-body">
+        <form method="get">
+            <div class="col-md-4">
+                <span>Departments :</span>
+                <select asp-for="SelectedDepartmentId" asp-items="@(new SelectList(Departments, "Id", "DepartmentName"))" class="form-select" id="departmentSelect">
+                    <option value="">-- Select a Department --</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+    </div>
+</div>
+
+@if (Model.AveragePerformanceScoreList != null && Model.AveragePerformanceScoreList.Count > 0)
+{
+    <strong>Average Performance Score - Department Wise</strong>
+    <div class="card">
+
+        <table class="table table-hover">
+            <thead class="thead-light">
+                <tr>
+                    <th>Department Name</th>
+                    <th>Average Performance Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.AveragePerformanceScoreList)
+                {
+                    <tr>
+                        <td>@item.DepartmentName</td>
+                        <td>@item.AveragePerformanceScore</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}

@@ -1,0 +1,26 @@
+﻿@page "{Id}"
+@model EmployeeManagementSystem.Pages.Employees.EditEmployeeModel
+@{
+}
+
+@{ViewData["Title"] = "Edit Employee";}
+
+@if (Model.AllowDelete)
+{
+    <div class="display-5 mb-1">Delete Employee</div>
+    <partial name="_DeletePartial" for="DCInfo" />
+    <div class="card dataForm">
+        <partial name="_EmployeePartial.cshtml" model="Model.EmployeeData" />
+    </div>
+
+    return;
+}
+
+<div class="display-5 mb-1">New Employee</div>
+
+<div class="card dataForm">
+    <form method="post">
+        <partial name="_EmployeePartial" model="Model.EmployeeData" />
+        <partial name="_UpdateCancelPartial" for="CCInfo" />
+    </form>
+</div>

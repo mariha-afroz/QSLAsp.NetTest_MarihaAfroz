@@ -1,0 +1,86 @@
+﻿@page "{handler?}"
+@model EmployeeManagementSystem.Pages.Search.SearchModel
+@inject EMSDataAccess.IEmployee EmployeeMan
+
+@{
+    ViewData["Title"] = "Search for Employees";
+}
+
+@{
+    var Departments = EmployeeMan.GetAllDepartments();
+}
+
+<div class="display-5 mb-1">Employee Search</div>
+
+<div class="card mt-2 mb-2">
+    <div class="card-body ">
+        <form method="get" asp-page-handler="Search">
+            <div class="row">
+                <div class="col-md-3">
+                    <span>Employee Name</span><span asp-validation-for="SearchData.EmployeeName"></span>
+                    <input type="text" asp-for="SearchData.EmployeeName" class="form-control" />
+                </div>
+                <div class="col-md-3">
+                    <span>Departments</span><span asp-validation-for="SearchData.DepartmentId"></span>
+                    <select asp-for="SearchData.DepartmentId" asp-items="@Departments.Select(x => new SelectListItem { Text = x.DepartmentName, Value = x.Id.ToString()})" class="form-select">
+                        <option value="">-- Select a Department --</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <span>Position</span><span asp-validation-for="SearchData.Position"></span>
+                    <input type="text" asp-for="SearchData.Position" class="form-control" />
+                </div>
+                <div class="col-md-3">
+                    <span>Min Score</span><span asp-validation-for="SearchData.MinScore"></span>
+                    <input type="number" asp-for="SearchData.MinScore" class="form-control" />
+                </div>
+                <div class="col-md-3">
+                    <span>Max Score</span><span asp-validation-for="SearchData.MaxScore"></span>
+                    <input type="number" asp-for="SearchData.MaxScore" class="form-control" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="submit" value="Search" class="btn btn-primary float-end" />
+                </div>
+                <div class="col-md-12">
+                    TIP: By Clicking on "Search Button" without any filter parameters, you can get the top 10 results
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@if (Model.EmployeeSearchList?.Count == 0)
+{
+    <div class="col-md-12">
+        <strong>No Records Returned. Please change the search criteria and try again.</strong>
+    </div>
+}
+@if (Model.EmployeeSearchList?.Count > 0)
+{
+    @(Html.Kendo().Grid(Model.EmployeeSearchList)
+              .Name("EmployeeSearchGrid")
+              .Columns(columns =>
+                                {
+                                    columns.Bound(c => c.EmployeeName).Title("Employee Name").Width(150).HeaderHtmlAttributes(new { @style = "font-weight:bold;" });
+                                    columns.Bound(c => c.DepartmentName).Title("Department Name").HeaderHtmlAttributes(new { @style = "font-weight:bold;" });
+                                    columns.Bound(c => c.Position).Title("Position").HeaderHtmlAttributes(new { @style = "font-weight:bold;" });
+                                    columns.Bound(c => c.MinScore).Title("Minimum Score").HeaderHtmlAttributes(new { @style = "font-weight:bold;" });
+                                    columns.Bound(c => c.MaxScore).Title("Maximum Score").HeaderHtmlAttributes(new { @style = "font-weight:bold;" });
+                                    })
+                    .ToolBar(t => { t.Search(); })
+                    .Sortable()
+                    .Pageable(pageable => pageable.ButtonCount(10)
+                        )
+                )
+}
+
+
+<style>
+    .k-input-values > .k-input-inner, .k-input-values > .k-searchbar {
+        height: 35px;
+    }
+</style>
+

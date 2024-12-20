@@ -1,0 +1,24 @@
+﻿@model EmployeeManagementSystem.Pages.CommitCancelModel
+
+<div class="row border-top p-2">
+    <div class="col" id="floating-save-cancel">
+        <input type="submit" value="Update" class="btn btn-primary float-end" />
+
+        @if (!string.IsNullOrEmpty(Model.CancelUrl))
+        {
+            <a href="@Model.CancelUrl" class="btn btn-sliverOne float-end me-2">Cancel</a>
+        }
+        <div>
+            <strong class="px-2 py-1 btn-blueTwo float-end me-2" id="SaveMsg" style="display:none">Updating... Please Wait.</strong>
+        </div>
+    </div>
+</div>
+
+<input type="hidden" asp-for="CancelUrl" />
+<script src="~/js/ButtonControl.js"></script>
+
+<script>
+    $(document).ready(function () {
+        FloatingSaveUpdateCancel();
+    });
+</script>

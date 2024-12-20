@@ -1,0 +1,26 @@
+﻿@model EMSDomain.Department
+@inject EMSDataAccess.IEmployee EmployeeMan
+
+<div asp-validation-summary="All"></div>
+<input asp-for="Id" type="hidden" />
+
+@{
+    var Employees = EmployeeMan.GetAllEmployees();
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <span class="Asterisk">Department Name</span><span asp-validation-for="DepartmentName"></span>
+        <input type="text" asp-for="DepartmentName" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <span>Manager</span><span asp-validation-for="ManagerId"></span>
+        <select asp-for="ManagerId" asp-items="@Employees.Select(x => new SelectListItem { Text = x.EmployeeName, Value = x.Id.ToString()})" class="form-select">
+            <option value="">-- Select an Employee --</option>
+        </select>
+    </div>
+    <div class="col-md-4">
+        <span>Budget</span><span asp-validation-for="Budget"></span>
+        <input type="number" asp-for="Budget" class="form-control" />
+    </div>
+</div>

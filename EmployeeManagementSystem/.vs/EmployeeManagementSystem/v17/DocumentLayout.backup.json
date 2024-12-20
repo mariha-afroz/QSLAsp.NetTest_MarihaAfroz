@@ -1,0 +1,128 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Monjirul\\Downloads\\EmployeeManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{94AE9C84-25DA-4E57-AAF4-67730CFAA957}|EMSDataAccess\\EMSDataAccess.csproj|c:\\users\\monjirul\\downloads\\employeemanagementsystem\\emsdataaccess\\ddl\\ddl.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{94AE9C84-25DA-4E57-AAF4-67730CFAA957}|EMSDataAccess\\EMSDataAccess.csproj|solutionrelative:emsdataaccess\\ddl\\ddl.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94AE9C84-25DA-4E57-AAF4-67730CFAA957}|EMSDataAccess\\EMSDataAccess.csproj|c:\\users\\monjirul\\downloads\\employeemanagementsystem\\emsdataaccess\\storedprocedure\\storedprocedure.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{94AE9C84-25DA-4E57-AAF4-67730CFAA957}|EMSDataAccess\\EMSDataAccess.csproj|solutionrelative:emsdataaccess\\storedprocedure\\storedprocedure.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FB14830-0AB0-475D-BBF4-B953F3E919AA}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|c:\\users\\monjirul\\downloads\\employeemanagementsystem\\employeemanagementsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3FB14830-0AB0-475D-BBF4-B953F3E919AA}|EmployeeManagementSystem\\EmployeeManagementSystem.csproj|solutionrelative:employeemanagementsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94AE9C84-25DA-4E57-AAF4-67730CFAA957}|EMSDataAccess\\EMSDataAccess.csproj|c:\\users\\monjirul\\downloads\\employeemanagementsystem\\emsdataaccess\\migrations\\20241220143604_20th december, 2024 v3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94AE9C84-25DA-4E57-AAF4-67730CFAA957}|EMSDataAccess\\EMSDataAccess.csproj|solutionrelative:emsdataaccess\\migrations\\20241220143604_20th december, 2024 v3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94AE9C84-25DA-4E57-AAF4-67730CFAA957}|EMSDataAccess\\EMSDataAccess.csproj|c:\\users\\monjirul\\downloads\\employeemanagementsystem\\emsdataaccess\\migrations\\20241220042139_20th december, 2024 v2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94AE9C84-25DA-4E57-AAF4-67730CFAA957}|EMSDataAccess\\EMSDataAccess.csproj|solutionrelative:emsdataaccess\\migrations\\20241220042139_20th december, 2024 v2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94AE9C84-25DA-4E57-AAF4-67730CFAA957}|EMSDataAccess\\EMSDataAccess.csproj|c:\\users\\monjirul\\downloads\\employeemanagementsystem\\emsdataaccess\\migrations\\20241220041107_20th december, 2024.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94AE9C84-25DA-4E57-AAF4-67730CFAA957}|EMSDataAccess\\EMSDataAccess.csproj|solutionrelative:emsdataaccess\\migrations\\20241220041107_20th december, 2024.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94AE9C84-25DA-4E57-AAF4-67730CFAA957}|EMSDataAccess\\EMSDataAccess.csproj|c:\\users\\monjirul\\downloads\\employeemanagementsystem\\emsdataaccess\\storedprocedure\\storedprocedure.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{94AE9C84-25DA-4E57-AAF4-67730CFAA957}|EMSDataAccess\\EMSDataAccess.csproj|solutionrelative:emsdataaccess\\storedprocedure\\storedprocedure.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94AE9C84-25DA-4E57-AAF4-67730CFAA957}|EMSDataAccess\\EMSDataAccess.csproj|c:\\users\\monjirul\\downloads\\employeemanagementsystem\\emsdataaccess\\ddl\\ddl.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{94AE9C84-25DA-4E57-AAF4-67730CFAA957}|EMSDataAccess\\EMSDataAccess.csproj|solutionrelative:emsdataaccess\\ddl\\ddl.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DDL.sql ",
+              "DocumentMoniker": "C:\\Users\\Monjirul\\Downloads\\EmployeeManagementSystem\\EMSDataAccess\\DDL\\DDL.sql",
+              "RelativeDocumentMoniker": "EMSDataAccess\\DDL\\DDL.sql",
+              "ToolTip": "C:\\Users\\Monjirul\\Downloads\\EmployeeManagementSystem\\EMSDataAccess\\DDL\\DDL.sql",
+              "RelativeToolTip": "EMSDataAccess\\DDL\\DDL.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-20T17:18:23.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StoredProcedure.sql ",
+              "DocumentMoniker": "C:\\Users\\Monjirul\\Downloads\\EmployeeManagementSystem\\EMSDataAccess\\StoredProcedure\\StoredProcedure.sql",
+              "RelativeDocumentMoniker": "EMSDataAccess\\StoredProcedure\\StoredProcedure.sql",
+              "ToolTip": "C:\\Users\\Monjirul\\Downloads\\EmployeeManagementSystem\\EMSDataAccess\\StoredProcedure\\StoredProcedure.sql",
+              "RelativeToolTip": "EMSDataAccess\\StoredProcedure\\StoredProcedure.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-20T17:18:21.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Monjirul\\Downloads\\EmployeeManagementSystem\\EmployeeManagementSystem\\appsettings.json",
+              "RelativeDocumentMoniker": "EmployeeManagementSystem\\appsettings.json",
+              "ToolTip": "C:\\Users\\Monjirul\\Downloads\\EmployeeManagementSystem\\EmployeeManagementSystem\\appsettings.json",
+              "RelativeToolTip": "EmployeeManagementSystem\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-20T16:12:34.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20241220143604_20th December, 2024 v3.cs",
+              "DocumentMoniker": "C:\\Users\\Monjirul\\Downloads\\EmployeeManagementSystem\\EMSDataAccess\\Migrations\\20241220143604_20th December, 2024 v3.cs",
+              "RelativeDocumentMoniker": "EMSDataAccess\\Migrations\\20241220143604_20th December, 2024 v3.cs",
+              "ToolTip": "C:\\Users\\Monjirul\\Downloads\\EmployeeManagementSystem\\EMSDataAccess\\Migrations\\20241220143604_20th December, 2024 v3.cs",
+              "RelativeToolTip": "EMSDataAccess\\Migrations\\20241220143604_20th December, 2024 v3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T16:03:41.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20241220042139_20th December, 2024 v2.cs",
+              "DocumentMoniker": "C:\\Users\\Monjirul\\Downloads\\EmployeeManagementSystem\\EMSDataAccess\\Migrations\\20241220042139_20th December, 2024 v2.cs",
+              "RelativeDocumentMoniker": "EMSDataAccess\\Migrations\\20241220042139_20th December, 2024 v2.cs",
+              "ToolTip": "C:\\Users\\Monjirul\\Downloads\\EmployeeManagementSystem\\EMSDataAccess\\Migrations\\20241220042139_20th December, 2024 v2.cs",
+              "RelativeToolTip": "EMSDataAccess\\Migrations\\20241220042139_20th December, 2024 v2.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T16:03:35.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20241220041107_20th December, 2024.cs",
+              "DocumentMoniker": "C:\\Users\\Monjirul\\Downloads\\EmployeeManagementSystem\\EMSDataAccess\\Migrations\\20241220041107_20th December, 2024.cs",
+              "RelativeDocumentMoniker": "EMSDataAccess\\Migrations\\20241220041107_20th December, 2024.cs",
+              "ToolTip": "C:\\Users\\Monjirul\\Downloads\\EmployeeManagementSystem\\EMSDataAccess\\Migrations\\20241220041107_20th December, 2024.cs",
+              "RelativeToolTip": "EMSDataAccess\\Migrations\\20241220041107_20th December, 2024.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T16:03:30.735Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

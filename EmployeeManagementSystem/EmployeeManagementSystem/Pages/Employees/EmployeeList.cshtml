@@ -1,0 +1,48 @@
+﻿@page
+@model EmployeeManagementSystem.Pages.Employees.EmployeeListModel
+
+@{
+    ViewData["Title"] = "Employee List";
+}
+
+<div class="display-5 mb-1">New Employee</div>
+
+@if (TempData["Message"] != null)
+{
+    <partial name="_MessagePartial" model='new MessageModel { Message = TempData["Message"] }' />
+}
+
+<div class="card mt-2">
+    <div class="card-header">
+        <strong> Employees <a asp-page="@Navigator.AddEmployee" class="btn btn-xs btn-greenOne"> Add New </a></strong>
+    </div>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Employee Name</th>
+                <th>Phone</th>
+                <th>Department</th>
+                <th>Joining Date</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                foreach (var employee in Model.EmployeeList)
+                {
+                    <tr>
+                        <td width="300">@employee.EmployeeName</td>
+                        <td width="200">@employee.JoiningDate</td>
+                        <td width="300">@employee.DepartmentName</td>
+                        <td>@employee.Phone</td>
+                        <td class="text-right"><a class="btn btn-xs btn-greenTwo" asp-page="@Navigator.EditEmployee" asp-route-id="@employee.Id">Edit</a></td>
+                        <td>
+                            <a href='@Navigator.EditEmployee/@employee.Id?IsDelete=True' class="btn btn-xs btn-redOne">Delete</a>              
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

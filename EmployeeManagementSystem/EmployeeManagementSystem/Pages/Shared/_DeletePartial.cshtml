@@ -1,0 +1,17 @@
+﻿@model EmployeeManagementSystem.Pages.DeleteCancelModel
+
+<div class="row p-2">
+
+    <div class="col">
+        <strong>The following record will be deleted. Please Confirm.</strong>
+    </div>
+</div>
+
+<div class="row p-2">
+
+    <div class="col">
+        <a asp-route-listId="@Model.ListId" class="btn btn-redOne me-2" asp-page-handler="Delete" asp-route-Transaction="@Context.Request.Query["Transaction"].ToString()">Confirm Delete</a>
+        <a href="@Model.CancelUrl" class="btn btn-grayOne me-2">Cancel</a>
+
+    </div>
+</div>

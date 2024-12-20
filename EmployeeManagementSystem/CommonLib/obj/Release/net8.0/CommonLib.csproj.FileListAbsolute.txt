@@ -1,0 +1,12 @@
+C:\Users\Monjirul\Downloads\EmployeeManagementSystem\CommonLib\bin\Release\net8.0\CommonLib.deps.json
+C:\Users\Monjirul\Downloads\EmployeeManagementSystem\CommonLib\bin\Release\net8.0\CommonLib.dll
+C:\Users\Monjirul\Downloads\EmployeeManagementSystem\CommonLib\bin\Release\net8.0\CommonLib.pdb
+C:\Users\Monjirul\Downloads\EmployeeManagementSystem\CommonLib\obj\Release\net8.0\CommonLib.csproj.AssemblyReference.cache
+C:\Users\Monjirul\Downloads\EmployeeManagementSystem\CommonLib\obj\Release\net8.0\CommonLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Monjirul\Downloads\EmployeeManagementSystem\CommonLib\obj\Release\net8.0\CommonLib.AssemblyInfoInputs.cache
+C:\Users\Monjirul\Downloads\EmployeeManagementSystem\CommonLib\obj\Release\net8.0\CommonLib.AssemblyInfo.cs
+C:\Users\Monjirul\Downloads\EmployeeManagementSystem\CommonLib\obj\Release\net8.0\CommonLib.csproj.CoreCompileInputs.cache
+C:\Users\Monjirul\Downloads\EmployeeManagementSystem\CommonLib\obj\Release\net8.0\CommonLib.dll
+C:\Users\Monjirul\Downloads\EmployeeManagementSystem\CommonLib\obj\Release\net8.0\refint\CommonLib.dll
+C:\Users\Monjirul\Downloads\EmployeeManagementSystem\CommonLib\obj\Release\net8.0\CommonLib.pdb
+C:\Users\Monjirul\Downloads\EmployeeManagementSystem\CommonLib\obj\Release\net8.0\ref\CommonLib.dll

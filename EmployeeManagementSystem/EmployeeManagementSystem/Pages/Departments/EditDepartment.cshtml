@@ -1,0 +1,15 @@
+﻿@page "{Id}"
+@model EmployeeManagementSystem.Pages.Departments.EditDepartmentModel
+@{
+}
+
+@{ViewData["Title"] = "Edit Department";}
+
+<div class="display-5 mb-1">Edit Department</div>
+
+<div class="card dataForm">
+    <form method="post">
+        <partial name="_DepartmentPartial" model="Model.DepartmentData" />
+        <partial name="_UpdateCancelPartial" for="CCInfo" />
+    </form>
+</div>

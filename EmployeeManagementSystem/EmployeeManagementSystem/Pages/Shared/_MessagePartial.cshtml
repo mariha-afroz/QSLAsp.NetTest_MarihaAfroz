@@ -1,0 +1,17 @@
+﻿@model EmployeeManagementSystem.Pages.MessageModel
+
+<div class="row p-2">
+        <div class="alert alert-dismissible fade show bg-danger text-white" role="alert">
+            <strong>@Model.Message</strong>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="close">
+            </button>
+        </div>
+</div>
+
+<script>
+    window.setTimeout(function () {
+        $(".alert").fadeTo(500, 0).slideUp(500, function () {
+            $(this).remove();
+        });
+    }, 3000);
+</script>

@@ -1,0 +1,17 @@
+﻿@page
+@model EmployeeManagementSystem.Pages.Departments.AddDepartmentModel
+
+
+@{
+    ViewData["Title"] = "Add Department";
+}
+
+
+<div class="display-5 mb-1">New Department</div>
+
+<div class="card dataForm">
+    <form method="post">
+        <partial name="_DepartmentPartial" model="Model.DepartmentData" />
+        <partial name="_SaveCancelPartial" for="CCInfo" />
+    </form>
+</div>
